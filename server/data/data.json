@@ -2,11 +2,18 @@
   "sounds": [
     {
       "id": 1,
-      "soundFiles": [" hello.mp3"]
-    },
-    {
-      "id": 2,
-      "soundFiles": []
+      "name": "voices",
+      "soundFiles": [
+        "Ahmed.mp3",
+        "Alex.mp3",
+        "And.mp3",
+        "Boots.mp3",
+        "Cats.mp3",
+        "Daphne.mp3",
+        "Jared.mp3",
+        "Johnny.mp3",
+        "Orange.mp3"
+      ]
     }
   ]
 }
