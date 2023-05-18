@@ -4,15 +4,15 @@
       "id": 1,
       "name": "voices",
       "soundFiles": [
-        "Ahmed.mp3",
-        "Alex.mp3",
-        "And.mp3",
-        "Boots.mp3",
-        "Cats.mp3",
-        "Daphne.mp3",
-        "Jared.mp3",
-        "Johnny.mp3",
-        "Orange.mp3"
+        "/voices/Ahmed.mp3",
+        "/voices/Alex.mp3",
+        "/voices/And.mp3",
+        "/voices/Boots.mp3",
+        "/voices/Cats.mp3",
+        "/voice/Daphne.mp3",
+        "/voices/Jared.mp3",
+        "/voices/Johnny.mp3",
+        "/voices/Orange.mp3"
       ]
     }
   ]
