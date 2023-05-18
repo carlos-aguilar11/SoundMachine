@@ -9,7 +9,6 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "test": "jest --watchAll",
     "format": "prettier -w '**/*.{js,jsx,ts,tsx}'"
-
   },
   "repository": {
     "type": "git",
