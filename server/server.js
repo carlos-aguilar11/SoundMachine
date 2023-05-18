@@ -6,14 +6,21 @@ const fs = require('fs').promises
 const server = express()
 
 // Server configuration
-const publicFolder = __dirname + '/public'
+const publicFolder = path.join(__dirname, 'public')
 server.use(express.static(publicFolder))
 server.use(express.urlencoded({ extended: false }))
 
 // Handlebars configuration
-server.engine('hbs', hbs.engine({ extname: 'hbs' }))
+server.engine(
+  'hbs',
+  hbs.engine({
+    extname: '.hbs',
+    defaultLayout: 'main', // Specify the default layout file
+    layoutsDir: path.join(__dirname, 'views/layouts'), // Specify the directory for layout files
+  })
+)
 server.set('view engine', 'hbs')
-server.set('views', __dirname + '/views')
+server.set('views', path.join(__dirname, 'views'))
 
 // Routes
 server.get('/', async (req, res) => {
