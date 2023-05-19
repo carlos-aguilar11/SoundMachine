@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
 body {
   background-color: rgb(43, 42, 42);
 }
@@ -22,6 +24,18 @@ body {
 } 
 
 h1 {
- text-align: center;
- color: whitesmoke;
+  padding-top: 50px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 50px;
+  text-shadow: 4px 4px 8px #000;
+  font-family:'Sigmar', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  animation: bounce 4s infinite;
+  transition: all 1s ease;
+}
+
+@keyframes bounce {   
+  0% { transform: translateY(0); }   
+  50% { transform: translateY(-10px); }   
+  100% { transform: translateY(0); } 
 }
