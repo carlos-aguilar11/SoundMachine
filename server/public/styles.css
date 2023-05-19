@@ -1,11 +1,27 @@
+body {
+  background-color: rgb(43, 42, 42);
+}
 .container {
   padding-top: 30px;
   margin: auto;
-  width: 650px;
+  width: 610px;
 }
 
 .grid-button {
   width: 200px;
   height: 200px; 
+  border-radius: 10%;
+  background-color: rgb(145, 145, 145);
 } 
 
+
+
+.grid-button:hover {
+  background-color:#002ead;
+  transition: 0.3s ease-in-out;
+} 
+
+h1 {
+ text-align: center;
+ color: whitesmoke;
+}
