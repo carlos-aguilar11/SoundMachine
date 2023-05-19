@@ -27,6 +27,7 @@ server.get('/', async (req, res) => {
   try {
     const filePath = path.join(__dirname, 'data/data.json')
     const data = JSON.parse(await fs.readFile(filePath, { encoding: 'utf-8' }))
+    console.log(data)
 
     res.render('home', data)
   } catch (error) {

@@ -1,5 +1,21 @@
-<div>
-
-<button class="pad-button" data-sound="drums/drum1.mp3">Button 1</button>
-<button class="pad-button" data-sound="drums/drum2.mp3">Button 2</button>
+<div class='container'>
+  <div class='row'>
+    {{#each soundFiles}}
+      <button
+        type='button'
+        class='grid-button'
+        data-sound='./public{{this}}'
+      >Button 1</button>
+    {{/each}}
 </div>
+
+<script>
+
+  function playSound(soundFile) { const audio = new Audio(soundFile);
+  audio.play(); } const buttons =
+  document.getElementsByClassName("grid-button");
+  Array.from(buttons).forEach((button) => { button.addEventListener("click",
+  function() { const soundFile = this.getAttribute("data-sound");
+  playSound(soundFile); }); });
+
+</script>

@@ -1,19 +1,13 @@
 {
-  "sounds": [
-    {
-      "id": 1,
-      "name": "voices",
-      "soundFiles": [
-        "/voices/Ahmed.mp3",
-        "/voices/Alex.mp3",
-        "/voices/And.mp3",
-        "/voices/Boots.mp3",
-        "/voices/Cats.mp3",
-        "/voice/Daphne.mp3",
-        "/voices/Jared.mp3",
-        "/voices/Johnny.mp3",
-        "/voices/Orange.mp3"
-      ]
-    }
+  "soundFiles": [
+    "/sounds/voices/Ahmed.mp3",
+    "/sounds/voices/Alex.mp3",
+    "/sounds/voices/And.mp3",
+    "/sounds/voices/Boots.mp3",
+    "/sounds/voices/Cats.mp3",
+    "/sounds/voice/Daphne.mp3",
+    "/sounds/voices/Jared.mp3",
+    "/sounds/voices/Johnny.mp3",
+    "/sounds/voices/Orange.mp3"
   ]
 }
