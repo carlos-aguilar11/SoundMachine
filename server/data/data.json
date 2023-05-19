@@ -1,8 +1,6 @@
 {
-  "sounds" : [
-    { 
-      "id": 1,
-      "soundFiles": ["Ahmed.mp3", "Alex.mp3", "And.mp3", "Boots.mp3", "Cats.mp3", "Daphne.mp3", "Jared.mp3", "Johnny.mp3", "Orange.mp3" ]
-    }
-  ]
+  
+  "soundFiles": ["sounds/Voices/Ahmed.mp3", "sounds/Voices/Alex.mp3", "sounds/Voices/And.mp3", "sounds/Voices/Boots.mp3", "sounds/Voices/Cats.mp3", "sounds/Voices/Daphne.mp3", "sounds/Voices/Jared.mp3", "sounds/Voices/Johnny.mp3", "sounds/Voices/Orange.mp3"]
+
+  
 }

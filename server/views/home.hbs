@@ -1,5 +1,38 @@
-<div>
+<div class="container">
+  <div class="row">
+    <button type="button" class="grid-button" data-sound="./public/sounds/voices/Ahmed.mp3">Button 1</button>
+    <button type="button" class="grid-button" data-sound="Alex.mp3">Button 2</button>
+    <button type="button" class="grid-button" data-sound="And.mp3">Button 3</button>
+  </div>
 
-<button class="pad-button" data-sound="drums/drum1.mp3">Button 1</button>
-<button class="pad-button" data-sound="drums/drum2.mp3">Button 2</button>
+   <div class="row">
+    <button type="button" class="grid-button" data-sound="Boots.mp3">Button 4</button>
+    <button type="button" class="grid-button" data-sound="Cats.mp3">Button 5</button>
+    <button type="button" class="grid-button" data-sound="Daphne.mp3">Button 6</button>
+  </div>
+
+   <div class="row">
+    <button type="button" class="grid-button" data-sound="Jared.mp3">Button 7</button>
+    <button type="button" class="grid-button" data-sound="Johnny.mp3">Button 8</button>
+    <button type="button" class="grid-button" data-sound="Orange.mp3">Button 9</button>
+  </div>
+
+
+<script>
+  // Function to play the sound
+  function playSound(soundFile) {
+    const audio = new Audio(soundFile);
+    audio.play();
+  }
+
+  // Add click event listeners to the buttons
+  const buttons = document.getElementsByClassName("grid-button");
+  Array.from(buttons).forEach((button) => {
+    button.addEventListener("click", function() {
+      const soundFile = this.getAttribute("data-sound");
+      playSound(soundFile);
+    });
+  });
+</script>
+
 </div>
